@@ -1,38 +1,49 @@
 {
-  "name": "mena-hq",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "postinstall": "prisma generate"
-  },
-  "dependencies": {
-    "@prisma/client": "^4.0.0",
-    "@trpc/client": "^9.25.3",
-    "@trpc/next": "^9.25.3",
-    "@trpc/react": "^9.25.3",
-    "@trpc/server": "^9.25.3",
-    "next": "12.2.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.4.0",
-    "react-query": "^3.39.1",
-    "superjson": "^1.9.1",
-    "zod": "^3.17.3"
-  },
-  "devDependencies": {
-    "@types/node": "18.0.0",
-    "@types/react": "18.0.14",
-    "@types/react-dom": "18.0.5",
-    "autoprefixer": "^10.4.7",
-    "eslint": "8.18.0",
-    "eslint-config-next": "12.1.6",
-    "postcss": "^8.4.14",
-    "prisma": "^4.0.0",
-    "tailwindcss": "^3.1.5",
-    "typescript": "4.7.4"
-  }
+	"name": "mena-hq",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"postinstall": "prisma generate",
+		"env-types": "gen-env-types"
+	},
+	"dependencies": {
+		"@hapi/iron": "^7.0.0",
+		"@prisma/client": "^4.0.0",
+		"@trpc/client": "^9.25.3",
+		"@trpc/next": "^9.25.3",
+		"@trpc/react": "^9.25.3",
+		"@trpc/server": "^9.25.3",
+		"cookie": "^0.5.0",
+		"gen-env-types": "^1.3.4",
+		"next": "12.2.0",
+		"next-connect": "^1.0.0-next.1",
+		"passport": "^0.6.0",
+		"passport-oauth2": "^1.6.1",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-icons": "^4.4.0",
+		"react-query": "^3.39.1",
+		"superjson": "^1.9.1",
+		"swr": "^1.3.0",
+		"zod": "^3.17.3"
+	},
+	"devDependencies": {
+		"@types/cookie": "^0.5.1",
+		"@types/node": "18.0.0",
+		"@types/passport": "^1.0.9",
+		"@types/passport-oauth2": "^1.4.11",
+		"@types/react": "18.0.14",
+		"@types/react-dom": "18.0.5",
+		"autoprefixer": "^10.4.7",
+		"eslint": "8.18.0",
+		"eslint-config-next": "12.1.6",
+		"postcss": "^8.4.14",
+		"prisma": "^4.0.0",
+		"tailwindcss": "^3.1.5",
+		"typescript": "4.7.4"
+	}
 }
