@@ -4,11 +4,11 @@ import type { AppRouter } from "@/server/router";
 import type { AppType } from "next/dist/shared/lib/utils";
 import superjson from "superjson";
 import "@/styles/globals.css";
-import { BaseLayout } from "@/layouts/BaseLayout";
+import { ProtectedRoute } from "@/layouts/ProtectedRoute";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <BaseLayout>
+    <ProtectedRoute>
       <style>
         {`
         body {
@@ -16,7 +16,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         }`}
       </style>
       <Component {...pageProps} />
-    </BaseLayout>
+    </ProtectedRoute>
   );
 };
 
